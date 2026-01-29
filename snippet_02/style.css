@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+    color: #333; /* Adds space around the whole page and add color */
+}
+
+h1 {
+    font-size: 3rem ;
+    margin-bottom: 0; /* change Head line 1 size */
+}
+
+h2 {
+    font-size: 2.25rem ;
+    margin-bottom: 0; /* change Head line 2 size */
+}
+
+p,ol,ul {
+    max-width: 40rem;
+    width: 100%;/* Ensures it shrinks on mobile */
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* let IMG fit with user's window */
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: italic;
+}
+
+a {
+    color: #0077b5; /* change the link color LinkedIn Blue lol */
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in; /*change the hover animation with color change and underline*/
+}
+
+a:hover, a:focus {
+    color: #004182;
+    text-decoration: underline;
+    outline: 0.25rem solid #0077b5;
+    outline-offset: 4px;  /*change the hover animation with color change and underline*/
+}
+
+.link-main {
+    background-color: rgb(199, 49, 74);
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.link-main:hover , .link-main:focus {
+    background-color: #da4d34;
+    color: azure;
+}
+
+a:hover img, a:focus img {
+    transform: scale(1.02); /* add slight zoom effect with img*/
+    opacity: 0.8;
+    border: 2px solid #0077b5;
+}
+
