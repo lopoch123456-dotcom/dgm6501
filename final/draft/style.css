@@ -113,6 +113,7 @@ body > p {
   display: block;
   object-fit: cover;
   aspect-ratio: 1 / 1;
+  max-height: 260px;
 }
 
 .card-body {
@@ -136,7 +137,8 @@ body > p {
 .card-body div {
   display: flex;
   align-items: center;
-  margin-top: 6px;
+  justify-content: space-between; /* the add to cart butten is too close with price on class we talkabout it . i fix it */
+  margin-top: 12px;
 }
 
 .price {
@@ -199,4 +201,78 @@ footer strong {
   font-family: 'Bebas Neue', sans-serif;
   color: #f7ec13;
   font-size: 1.1rem;
+}
+
+/*Hover*/
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(108, 56, 133, 0.18);
+  }
+
+  .add-btn:hover {
+    background: #5a3480;
+  }
+
+  .hero button:hover,
+  nav button:hover {
+    background: #ffe600;
+  }
+
+  nav ul a:hover {
+    color: #fff;
+  }
+}
+
+/*butten Transitions*/
+.add-btn,
+.hero button,
+nav button,
+nav ul a {
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+/*Mobile adpet */
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    padding: 0 20px 40px;
+    gap: 16px;
+  }
+
+  .card > img {
+    max-height: 200px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+    gap: 20px;
+  }
 }
