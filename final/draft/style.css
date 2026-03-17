@@ -108,11 +108,11 @@ body > p {
   border: 2px solid #d6cadd;
 }
 
-.card > p {
-  font-size: 4rem;
-  text-align: center;
-  padding: 40px 0;
-  background: #f0e8f7;
+.card > img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .card-body {
