@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLUMI — Cart & Checkout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo"><img src="Asset 1.png" alt="Plumi logo"></div>
+    <ul>
+      <li><a href="index.html">Shop</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="cart.html"><button>Cart (<span id="nav-cart-count">0</span>)</button></a>
+  </nav>
+
+  <div class="cart-page">
+
+    <div id="cart-section">
+      <h1>Your Cart</h1>
+
+      <div id="cart-empty-msg" class="cart-empty-msg" style="display:none;">
+        Your cart is empty. <a href="index.html" style="color:#6c3885;">Continue shopping →</a>
+      </div>
+
+      <table class="cart-table" id="cart-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-tbody"></tbody>
+      </table>
+
+      <div class="cart-summary" id="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal-val">$0</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span>Free</span>
+        </div>
+        <div class="summary-row ">
+          <span>Total</span>
+          <span id="total-val">$0</span>
+        </div>
+      </div>
+
+      <div class="btn-row" id="cart-actions">
+        <button class="btn-primary" id="proceed-btn">Proceed to Checkout</button>
+        <a href="index.html"><button class="btn-secondary">Continue Shopping</button></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>PLUMI®</strong><br><br>
+    plumi.co · 2026 · All rights reserved
+  </footer>
+
+</body>
+</html>
